@@ -99,7 +99,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: 'Roboto';
 }
 
 /* PHP Email Form Messages
@@ -253,8 +253,9 @@ h6 {
 .header .logo img {
   max-height: 80px;
   margin-right: 8px;
-  border: none;
-  outline: none;
+  border: none !important;
+  outline: none !important;
+
 }
 
 .header .logo h1 {
@@ -334,7 +335,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 600;
     display: flex;
@@ -2625,3 +2626,438 @@ CONTACT SECTION PREMIUM
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+/* ==================================================
+CAREER PAGE CSS START
+================================================== */
+
+.career-hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  font-family: 'Roboto';
+}
+
+.career-tag {
+  display: inline-block;
+  background: #f77501;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.career-hero h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.career-hero h2 span {
+  color: #3F378E;
+}
+
+.career-hero p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.career-image {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+}
+
+.career-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Benefits */
+
+.career-benefits {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+  transition: .4s;
+  height: 100%;
+  border: 1px solid #edf0f5;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .12);
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3F378E, #5c54b9);
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.benefit-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  color: #666;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* Openings */
+
+.career-openings {
+  padding: 80px 0;
+  background: #f8f9fc;
+}
+
+.career-accordion .accordion-item {
+  border: 0;
+  border-radius: 20px !important;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+  transition: all .35s ease;
+}
+
+.career-accordion .accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(63, 55, 142, .12);
+}
+
+/* Header */
+
+.career-accordion .accordion-button {
+  background: #fff;
+  color: #222;
+  padding: 14px 30px;
+  box-shadow: none;
+  transition: all .45s ease;
+}
+
+.career-accordion .accordion-button:hover {
+  background: #f6f7ff;
+}
+
+.career-accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #3F378E, #5d56c7);
+  color: #fff;
+}
+
+/* Heading white on active */
+
+.career-accordion .accordion-button:not(.collapsed) .job-title h5,
+.career-accordion .accordion-button:not(.collapsed) .job-title span {
+  color: #fff !important;
+}
+
+.job-title h5 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  transition: .35s;
+}
+
+.job-title span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+  transition: .35s;
+}
+
+/* Arrow */
+
+.career-accordion .accordion-button::after {
+  transition: transform .45s ease;
+  filter: brightness(.4);
+}
+
+.career-accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  filter: brightness(0) invert(1);
+}
+
+/* Remove bootstrap focus */
+
+.career-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Smooth body */
+
+.career-accordion .accordion-collapse {
+  transition: all .45s ease;
+}
+
+.career-accordion .accordion-body {
+  padding: 35px;
+  background: #fff;
+  animation: careerFade .45s ease;
+}
+
+@keyframes careerFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.career-accordion .accordion-body h5 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.career-accordion ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.career-accordion li {
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* Button */
+
+.career-apply-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f77501;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .35s ease;
+}
+
+.career-apply-btn:hover {
+  background: #3F378E;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Hiring Process */
+
+.career-process {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.process-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+  transition: .4s;
+  height: 100%;
+}
+
+.process-box:hover {
+  transform: translateY(-10px);
+}
+
+.process-number {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f77501, #ff9a42);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.process-box h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.process-box p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Form */
+
+.career-form-section {
+  padding: 80px 0;
+  background: #f8fbff;
+}
+
+.career-form-box {
+  background: #fff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .08);
+}
+
+.career-form-box h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #3F378E;
+}
+
+.career-form-box .form-control {
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #dce3ee;
+  box-shadow: none;
+}
+
+.career-form-box textarea.form-control {
+  height: auto;
+  padding-top: 15px;
+}
+
+.career-form-box .form-control:focus {
+  border-color: #3F378E;
+  box-shadow: 0 0 0 4px rgba(63, 55, 142, .08);
+}
+
+.career-submit-btn {
+  background: linear-gradient(135deg, #3F378E, #5c54b9);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.career-submit-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* CTA */
+
+.career-cta {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #3F378E, #2B6CB0);
+  color: #fff;
+}
+
+.career-cta h2 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.career-cta p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.career-cta .catalogue-btn {
+  background: #f5c518;
+  color: #222;
+}
+
+.career-cta .catalogue-btn:hover {
+  background: #fff;
+  color: #3F378E;
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+  .career-hero {
+    text-align: center;
+  }
+
+  .career-hero h2 {
+    font-size: 36px;
+  }
+
+  .career-image {
+    margin-top: 40px;
+  }
+
+  .career-buttons {
+    justify-content: center;
+  }
+
+}
+
+@media(max-width:767px) {
+
+  .career-hero {
+    padding: 50px 0;
+  }
+
+  .career-hero h2 {
+    font-size: 28px;
+  }
+
+  .career-form-box {
+    padding: 25px;
+  }
+
+  .career-form-box h2 {
+    font-size: 28px;
+  }
+
+  .career-cta h2 {
+    font-size: 30px;
+  }
+
+  .job-title h5 {
+    font-size: 17px;
+  }
+
+  .accordion-button {
+    padding: 18px !important;
+  }
+
+}
+
+/* ==================================================
+CAREER PAGE CSS END
+================================================== */
