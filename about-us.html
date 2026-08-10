@@ -25,6 +25,7 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -52,9 +53,17 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home<br></a></li>
-          <li><a href="about-us.html" class="active">About Us</a></li>
+          <!-- <li><a href="about-us.html">About Us</a></li> -->
+          <li class="dropdown"><a href="javascript:void(0)" class="active"><span>About Us</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about-us.html">About Arbourbiotec</a></li>
+              <li><a href="about-us.html#about-arbourbiotec">Vision-Mission & Value</a></li>
+              <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="quality-manufacturing.html">Quality & Manufacturing</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
           <li><a href="careers.html">Careers</a></li>
           <li><a href="contact-us.html">Contact</a></li>
         </ul>
@@ -69,11 +78,364 @@
   <main class="main">
 
     <section class="page-banner">
-      <div class="container text-center">
-        <h1>About Us</h1>
-        <p>Delivering Trusted Pharmaceutical Solutions Since 2005</p>
+      <div class="baner-container">
+        <img src="assets/img/aboutus-baner.jpg" class="img-fluid">
       </div>
     </section>
+
+    <!-- ==============================
+     Our Journey Timeline
+============================== -->
+
+    <section class="journey-section">
+
+      <div class="journey-container">
+
+        <!-- Section Heading -->
+        <div class="journey-heading">
+          <span class="journey-label">OUR JOURNEY</span>
+
+          <h2>
+            Our Journey Towards
+            <em>Better Healthcare</em>
+          </h2>
+        </div>
+
+
+        <!-- Timeline -->
+        <div class="journey-timeline">
+
+          <!-- Item 1 -->
+          <div class="journey-item">
+
+            <div class="journey-point">
+              <div class="journey-icon">
+                <i class="bi bi-bullseye"></i>
+              </div>
+            </div>
+
+            <div class="journey-content">
+
+              <h3>1996</h3>
+
+              <h4>THE FOUNDATION</h4>
+
+              <p>
+                A strong beginning built on a vision to contribute to the growing healthcare sector with trusted
+                pharmaceutical solutions.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Item 2 -->
+          <div class="journey-item">
+
+            <div class="journey-point">
+              <div class="journey-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+            </div>
+
+            <div class="journey-content">
+
+              <h3>2001</h3>
+
+              <h4>ENTERING MANUFACTURING</h4>
+
+              <p>
+                Expanded capabilities and stepped into pharmaceutical manufacturing with a strong focus on quality and
+                consistency.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Item 3 -->
+          <div class="journey-item">
+
+            <div class="journey-point">
+              <div class="journey-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+            </div>
+
+            <div class="journey-content">
+
+              <h3>2005–2015</h3>
+
+              <h4>GROWTH &amp; EXPANSION</h4>
+
+              <p>
+                Strengthened our product portfolio and expanded into diverse therapeutic segments to serve evolving
+                healthcare needs.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Item 4 -->
+          <div class="journey-item">
+
+            <div class="journey-point">
+              <div class="journey-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+            </div>
+
+            <div class="journey-content">
+
+              <h3>2016–2020</h3>
+
+              <h4>BUILDING EXCELLENCE</h4>
+
+              <p>
+                Focused on advanced infrastructure, quality systems and operational excellence to deliver reliable
+                healthcare solutions.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Item 5 -->
+          <div class="journey-item">
+
+            <div class="journey-point">
+              <div class="journey-icon">
+                <i class="bi bi-globe2"></i>
+              </div>
+            </div>
+
+            <div class="journey-content">
+
+              <h3>2021 &amp; Beyond</h3>
+
+              <h4>THE FUTURE</h4>
+
+              <p>
+                Continuing to embrace innovation, technology and new opportunities while building a stronger future in
+                healthcare.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+     OUR FOUNDATION SECTION
+===================================================== -->
+    <section class="foundation-section" id="about-arbourbiotec">
+
+      <div class="foundation-container">
+
+        <!-- Section Heading -->
+        <div class="foundation-heading">
+
+          <span class="section-label">
+            <span></span>
+            OUR FOUNDATION
+            <span></span>
+          </span>
+
+          <h2>
+            Driven by Purpose.
+            <em>Guided by Vision.</em>
+          </h2>
+
+        </div>
+
+
+        <!-- Cards -->
+        <div class="foundation-grid">
+
+
+          <!-- ================= PURPOSE ================= -->
+          <article class="foundation-card">
+
+            <div class="card-content">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+
+              <span class="card-label">
+                OUR PURPOSE
+              </span>
+
+              <div class="mini-line"></div>
+
+              <h3>
+                Better Healthcare,
+                Better Lives
+              </h3>
+
+              <p>
+                To make a meaningful difference in healthcare
+                through dependable, high-quality pharmaceutical
+                solutions that improve everyday lives.
+              </p>
+
+            </div>
+
+            <div class="card-image">
+              <img src="assets/img/purpose.jpg" alt="Pharmaceutical products">
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= VISION ================= -->
+          <article class="foundation-card">
+
+            <div class="card-content">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <span class="card-label">
+                OUR VISION
+              </span>
+
+              <div class="mini-line"></div>
+
+              <h3>
+                Shaping the Future
+                of Healthcare
+              </h3>
+
+              <p>
+                To build a trusted healthcare organization
+                recognized for innovation, quality, integrity
+                and a continuous pursuit of excellence.
+              </p>
+
+            </div>
+
+            <div class="card-image">
+              <img src="assets/img/vision.jpg" alt="Healthcare vision">
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= MISSION ================= -->
+          <article class="foundation-card">
+
+            <div class="card-content">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+
+              <span class="card-label">
+                OUR MISSION
+              </span>
+
+              <div class="mini-line"></div>
+
+              <h3>
+                Quality That
+                Makes a Difference
+              </h3>
+
+              <p>
+                To develop and deliver reliable pharmaceutical
+                solutions through quality-driven processes,
+                innovation and a commitment to customer trust.
+              </p>
+
+            </div>
+
+            <div class="card-image">
+              <img src="assets/img/mission.jpg" alt="Pharmaceutical research">
+            </div>
+
+          </article>
+
+
+
+          <!-- ================= VALUES ================= -->
+          <article class="foundation-card values-card">
+
+            <div class="card-content">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+
+              <span class="card-label">
+                OUR VALUES
+              </span>
+
+              <div class="mini-line"></div>
+
+              <h3>
+                Principles That
+                Guide Us
+              </h3>
+
+              <ul class="values-list">
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Quality First
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Integrity & Trust
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Continuous Improvement
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Innovation
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Responsibility & Care
+                </li>
+                <li></li>
+                <li></li>
+
+              </ul>
+
+            </div>
+
+            <div class="card-image">
+              <img src="assets/img/values.jpg" alt="Healthcare and responsibility">
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
     <section class="about-inner">
 
