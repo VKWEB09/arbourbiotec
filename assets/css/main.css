@@ -5602,13 +5602,13 @@ CAREER PAGE CSS END
 
 .mini-heading {
   color: var(--ab-purple);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
 .heading-line {
-  width: 100px;
+  /* width: 100px; */
   height: 2px;
   margin: 9px 0 15px;
   background:
@@ -5670,7 +5670,7 @@ CAREER PAGE CSS END
   padding: 65px max(5%, 30px);
   background: var(--light-bg);
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 310px 1fr;
   gap: 45px;
   align-items: start;
 }
@@ -5686,7 +5686,7 @@ CAREER PAGE CSS END
 .leaders-grid {
   display: grid;
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(2, 1fr);
   gap: 20px;
 }
 
