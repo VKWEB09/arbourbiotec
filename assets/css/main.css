@@ -4915,9 +4915,47 @@ CAREER PAGE CSS END
   align-self: start;
 }
 
+
+.therapy-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2px;
+}
+
+.therapy-med-name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0px 0px 0px 16px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.therapy-med-name::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #604ba0;
+  border-right: 1px solid #604ba0;
+  transform: rotate(45deg);
+}
+
+.therapy-med-name:hover {
+  color: #604ba0;
+  transition: 0.3s ease;
+}
+
+
 .therapy-title {
   min-height: 50px;
-  padding: 13px 22px;
+  padding: 13px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4948,9 +4986,9 @@ CAREER PAGE CSS END
 }
 
 .therapy-item.active .therapy-description {
-  max-height: 120px;
+  max-height: 320px;
   opacity: 1;
-  padding: 0 22px 20px;
+  padding: 0 15px 15px;
 }
 
 .therapy-item.active .therapy-title i {
