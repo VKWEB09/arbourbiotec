@@ -4921,7 +4921,7 @@ CAREER PAGE CSS END
   flex-direction: column;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 7px 0 0 0;
   gap: 2px;
 }
 
